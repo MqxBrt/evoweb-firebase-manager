@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { doSignInWithEmailAndPassword } from '../auth';
 import { useAuth } from '../auth/context';
+import '../assets/css/login.css';
 
 export default function Login() {
 
@@ -27,7 +28,7 @@ export default function Login() {
                 <div className="w-96 text-gray-600 space-y-5 p-4 shadow-xl border rounded-xl">
                     <div className="text-center">
                         <div className="mt-2">
-                            <h3 className="text-gray-800 text-xl font-semibold sm:text-2xl">Welcome Back</h3>
+                            <h3 className="text-white text-xl font-semibold sm:text-2xl">Welcome Back</h3>
                         </div>
                     </div>
                     <form
@@ -35,7 +36,7 @@ export default function Login() {
                         className="space-y-5"
                     >
                         <div>
-                            <label className="text-sm text-gray-600 font-bold">
+                            <label className="text-sm text-white font-bold">
                                 Email
                             </label>
                             <input
@@ -49,7 +50,7 @@ export default function Login() {
 
 
                         <div>
-                            <label className="text-sm text-gray-600 font-bold">
+                            <label className="text-sm text-white font-bold">
                                 Password
                             </label>
                             <input
