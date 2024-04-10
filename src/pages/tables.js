@@ -1,32 +1,28 @@
-import { useRef } from "react";
-import { addDoc, collection } from "firebase/firestore";
-import { firestore } from "../firebase";
+import React from 'react';
+import { tables } from '../firebase/tables';
 
-export default function Login() {
-    const usernameRef = useRef();
-    const ref = collection(firestore, "users");
+export default function Tables() {
 
-    const handleClick = async (event) => {
-        event.preventDefault();
-        console.log(usernameRef.current.value);
+    function addItem(tableName) {
 
-        let data = {
-            username: usernameRef.current.value,
-        };
-
-        try {
-            addDoc(ref, data);
-        } catch (error) {
-            console.log(error);
-        }
-    };
+    }
 
     return (
         <div>
-            <form onSubmit={handleClick}>
-                <input type="text" ref={usernameRef} />
-                <button type="submit">Test</button>
-            </form>
+            {tables.map((table) => (
+                <div key={table.firebaseName}>
+                    <h3>{table.displayName}</h3>
+                    <form onSubmit={addItem(table.firebaseName)}>
+                        {table.attributes.map((attribute) => (
+                            <div key={attribute[0]}>
+                                <span>{attribute[0]}</span>
+                                <input type={attribute[1]} required />
+                            </div>
+                        ))}
+                    </form>
+                    <button type="submit">Ajouter</button>
+                </div>
+            ))}
         </div>
     )
 }
