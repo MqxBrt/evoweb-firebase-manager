@@ -21,14 +21,19 @@ body{
     width: 100%;
 }
 
-.logoutBtn{
-    color: white;
-}
-
 .logoutContainer{
     display: flex;
     align-items: center;
     background-color: rgb(253, 72, 72);
     padding: 1em;
     border-radius: 5em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+.logoutContainer:hover{
+    background-color: rgb(245, 245, 245);
+    color: rgb(253, 72, 72);
 }
