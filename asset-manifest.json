@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/evoweb-firebase-manager/static/css/main.30ea0390.css",
+    "main.js": "/evoweb-firebase-manager/static/js/main.8480d32d.js",
+    "index.html": "/evoweb-firebase-manager/index.html",
+    "main.30ea0390.css.map": "/evoweb-firebase-manager/static/css/main.30ea0390.css.map",
+    "main.8480d32d.js.map": "/evoweb-firebase-manager/static/js/main.8480d32d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.30ea0390.css",
+    "static/js/main.8480d32d.js"
+  ]
+}
