@@ -2,6 +2,8 @@ import React from 'react';
 import { useAuth } from '../auth/context';
 import { doSignOut } from '../auth';
 import { useNavigate } from 'react-router-dom';
+import '../assets/css/home.css';
+import { FiLogOut } from 'react-icons/fi';
 
 export default function Home() {
 
@@ -9,9 +11,11 @@ export default function Home() {
     const navigate = useNavigate();
 
     return (
-        <div>
-            <div className='text-2xl font-bold pt-14'>Hello {currentUser.displayName ? currentUser.displayName : currentUser.email}, you are now logged in.</div>
-            <button onClick={() => { doSignOut().then(() => { navigate('/login') }) }} className='text-sm text-blue-600 underline'>Logout</button>
+        <div className='toolbarContainer'>
+            <div className='toolbar'>
+                <div className='text-2xl font-bold text-white'>Hello {currentUser.displayName ? currentUser.displayName : currentUser.email}, you are now logged in.</div>
+                <div className='logoutContainer'><FiLogOut onClick={() => { doSignOut().then(() => { navigate('/login') }) }} className='logoutBtn'/></div>
+            </div>
         </div>
     )
 }
