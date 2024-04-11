@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/evoweb-firebase-manager/static/css/main.30ea0390.css",
-    "main.js": "/evoweb-firebase-manager/static/js/main.c07f507c.js",
+    "main.css": "/evoweb-firebase-manager/static/css/main.71c4e6ba.css",
+    "main.js": "/evoweb-firebase-manager/static/js/main.15af79fb.js",
     "index.html": "/evoweb-firebase-manager/index.html",
-    "main.30ea0390.css.map": "/evoweb-firebase-manager/static/css/main.30ea0390.css.map",
-    "main.c07f507c.js.map": "/evoweb-firebase-manager/static/js/main.c07f507c.js.map"
+    "main.71c4e6ba.css.map": "/evoweb-firebase-manager/static/css/main.71c4e6ba.css.map",
+    "main.15af79fb.js.map": "/evoweb-firebase-manager/static/js/main.15af79fb.js.map"
   },
   "entrypoints": [
-    "static/css/main.30ea0390.css",
-    "static/js/main.c07f507c.js"
+    "static/css/main.71c4e6ba.css",
+    "static/js/main.15af79fb.js"
   ]
 }
