@@ -28,6 +28,18 @@ const tables = [
             ["text", "text"],
             ["websiteRefresh", "checkbox"]
         ],
+    },
+    {
+        firebaseName: "Producers",
+        displayName: "Membres",
+        attributes: [
+            ["age", "number"],
+            ["bio", "text"],
+            ["link", "text"],
+            ["name", "text"],
+            ["src", "text"],
+            ["start", "checkbox"],
+        ],
     }
 ]
 

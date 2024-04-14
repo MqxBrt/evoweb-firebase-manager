@@ -3,10 +3,10 @@ import { Navigate, Outlet } from 'react-router-dom';
 
 
 const GuestGuard = () => {
-    const { currentUser } = useAuth();
+    const { userLoggedIn } = useAuth();
 
     return (
-        currentUser == null
+        !userLoggedIn
             ? <Outlet />
             : <Navigate to='/' />
     )
